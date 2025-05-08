@@ -135,7 +135,7 @@ You can also specify a [Wrap](https://mesonbuild.com/Wrap-dependency-system-manu
 ```ini
 [wrap-git]
 url = https://github.com/didarulilm/robin-table.git
-revision = v1.0.0  
+revision = HEAD 
 depth = 1
 ```
 
