@@ -1,4 +1,5 @@
 # #️⃣ robin-table 
+[![CI](https://github.com/didarulilm/robin-table/actions/workflows/ci.yml/badge.svg)](https://github.com/didarulilm/robin-table/actions/workflows/ci.yml)
 
 The robin-table library is a fast hash table/hash map implementation in C using open addressing with linear probing and Robin Hood hashing for collision resolution.
 
