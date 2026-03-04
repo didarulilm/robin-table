@@ -170,9 +170,8 @@ static void* robin_table_put0(robin_table_t* rt, const void* key, size_t klen, v
         }
 
         /*
-         * If we hit a "richer" bucket (lower PSL), steal its
-         * spot and swap the rich bucket's contents with the
-         * current bucket.
+         * If we hit a "richer" bucket (lower PSL), steal its spot 
+         * and swap the rich bucket's contents with the current bucket.
          */
         if (bucket->psl < entry.psl) {
             robin_bucket_t temp;
@@ -340,8 +339,7 @@ void* robin_table_del(robin_table_t* rt, const void* key, size_t klen)
 
     if (rt->bucket_count > rt->init_buckets && rt->count <= rt->shrink_at) {
         /*
-         * Safe to ignore shrink failures: no structural impact
-         * on the hash table.
+         * Safe to ignore shrink failures: no structural impact on the hash table
          */
         (void)robin_table_resize(rt, rt->bucket_count >> 1);
     }
