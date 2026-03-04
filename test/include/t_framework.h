@@ -23,7 +23,7 @@
  */
 
 /*
- * t_framework.h - v.1.0.0 - A minimalist single-header testing framework.
+ * t_framework.h - v.1.0.0 - A minimal single-header testing framework.
  */
 
 #ifndef T_FRAMEWORK_H
