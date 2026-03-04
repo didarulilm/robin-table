@@ -141,7 +141,7 @@ depth = 1
 
 ## Benchmarks
 
-I used a custom-built single-header testing framework to run unit tests alongside benchmarks 
+I used a custom-built single-header testing framework `t_framework.h` to run unit tests alongside benchmarks 
 in a single test file. The benchmarks were run on the following configuration:
 
 - Machine: Apple M1 Pro 2020  
@@ -169,3 +169,8 @@ In all cases, the hash tables were created for an initial number of 8,000,000 en
 ## License
 
 The robin-table source code is available under the MIT License.
+
+## Reference
+
+Celis, Pedro. _Robin Hood Hashing_. Tech. Rep. CS-86-14, Department of Computer Science, University of Waterloo, 1986. [https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf](https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf).
+
