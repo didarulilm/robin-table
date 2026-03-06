@@ -1,15 +1,15 @@
 # #️⃣ robin-table 
 [![CI](https://github.com/didarulilm/robin-table/actions/workflows/ci.yml/badge.svg)](https://github.com/didarulilm/robin-table/actions/workflows/ci.yml)
 
-The robin-table library is a fast hash table/hash map implementation in C using open addressing with linear probing and Robin Hood hashing for collision resolution.
+A fast hash table/hash map implementation in C using open addressing with linear probing and Robin Hood hashing for collision resolution.
 
 ## Key Features
 
-- Pretty fast hash table, check the [benchmarks](https://github.com/didarulilm/robin-table?tab=readme-ov-file#benchmarks) for details.
-- Support any arbitrary keys/values.
-- Built-in support for both cryptographic and non-cryptographic hash functions with performance analysis utilities to help you assess the best hash function for your key domain.
-- Blazingly fast iterator that allows safe traversal of all entries while encapsulating the internal implementation details of the hash table.
-- The library can be used with all internal assertions disabled by defining the `RT_NO_ASSERT` macro.
+- Very fast hash table; check the [benchmarks](https://github.com/didarulilm/robin-table?tab=readme-ov-file#benchmarks) for details.
+- Supports any arbitrary keys/values.
+- Built-in support for both cryptographic and non-cryptographic hash functions with performance analysis utilities to help you assess the best hash function for your specific use case.
+- Fast iterator that allows safe traversal of all entries while encapsulating the internal implementation details of the hash table.
+- Supports assertion-free operation by defining the `RT_NO_ASSERT` macro.
 
 ## API Examples
 
@@ -92,7 +92,7 @@ robin_table_iter_destroy(iter);
 
 ### Built-in hash functions 
 
-This library is internally configured to use [rapidhash](https://github.com/Nicoshev/rapidhash) (an improved wyhash) by default, which is the fastest recommended hash function by [SMHasher](https://github.com/rurban/smhasher?tab=readme-ov-file#summary). In addition, it comes with built-in support for [SipHash-2-4](https://github.com/veorq/SipHash) and [xxh64](https://github.com/Cyan4973/xxHash), eliminating the need for custom implementations in most cases:
+The robin-table library is internally configured to use [rapidhash](https://github.com/Nicoshev/rapidhash) (an improved wyhash) by default, which is the fastest recommended hash function by [SMHasher](https://github.com/rurban/smhasher?tab=readme-ov-file#summary). In addition, it comes with built-in support for [SipHash-2-4](https://github.com/veorq/SipHash) and [xxh64](https://github.com/Cyan4973/xxHash), eliminating the need for custom implementations in most cases:
 
 ```C
 robin_table_rapidhash()   /* Returns 64-bit hash value of the key using rapidhash */
@@ -141,8 +141,7 @@ depth = 1
 
 ## Benchmarks
 
-I used a custom-built single-header testing framework `t_framework.h` to run unit tests alongside benchmarks 
-in a single test file. The benchmarks were run on the following configuration:
+I used a single-header testing framework `t_framework.h` to run unit tests and benchmarks in the same test file. The benchmarks were run on the following configuration:
 
 - Machine: Apple M1 Pro 2020  
 - OS: macOS Sequoia 15.4.1 
@@ -172,5 +171,5 @@ The robin-table source code is available under the MIT License.
 
 ## Reference
 
-Celis, Pedro. _Robin Hood Hashing_. Tech. Rep. CS-86-14, Department of Computer Science, University of Waterloo, 1986. [https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf](https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf).
+- Celis, Pedro. _Robin Hood Hashing_. Tech. Rep. CS-86-14, Department of Computer Science, University of Waterloo, 1986. [https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf](https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf).
 
