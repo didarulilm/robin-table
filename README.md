@@ -22,7 +22,7 @@ To construct a hash table you need to specify the initial number of entries, a h
 robin_table_t* rt = robin_table_create(64, robin_table_siphash, 0);
 ```
 
-Note that it is important to use a good hash function; otherwise, it can lead to degraded performance or potential vulnerabilities to Denial-of-Service (DoS) attacks; read the [built-in hash functions](https://github.com/didarulilm/robin-table?tab=readme-ov-file#built-in-hash-functions) section below.
+:memo: **Note:** It is important to use a good hash function; otherwise, it can lead to degraded performance or potential vulnerabilities to Denial-of-Service (DoS) attacks; read the [built-in hash functions](https://github.com/didarulilm/robin-table?tab=readme-ov-file#built-in-hash-functions) section below.
 
 ### Insertion, access, and removal of entries
 
@@ -116,7 +116,7 @@ To free the memory associated with the hash table use the `robin_table_destroy`
 robin_table_destroy(rt);
 ```
 
-Note that the robin-table does not manage the memory associated with keys or values, so ensure you free these resources before calling `robin_table_destroy`.
+:memo: **Note:** The robin-table does not manage the memory associated with keys or values, so ensure you free these resources before calling `robin_table_destroy`.
 
 ## Testing and Usage 
 
@@ -172,6 +172,6 @@ The `robin-table` source code is available under the MIT License.
 
 ## Reference
 
-- Celis, Pedro, Per-Åke Larson, and J. Ian Munro. "Robin Hood Hashing." 26th Annual Symposium on Foundations of Computer Science (SFCS), IEEE, 1985, pp. 281–288. https://doi.org/10.1109/SFCS.1985.48.
+- Celis, Pedro, Per-Ake Larson, and J. Ian Munro. "Robin Hood Hashing." 26th Annual Symposium on Foundations of Computer Science (SFCS), IEEE, 1985, pp. 281–288. https://doi.org/10.1109/SFCS.1985.48.
 
 - Celis, Pedro. Robin Hood Hashing. Department of Computer Science, University of Waterloo, 1986. https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf.
