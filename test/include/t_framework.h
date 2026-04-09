@@ -23,7 +23,8 @@
  */
 
 /*
- * t_framework.h - v.1.0.0 - A minimal single-header testing framework.
+ * A dead-simple single-header unit testing framework for running unit tests 
+ * and benchmarks in one file.
  */
 
 #ifndef T_FRAMEWORK_H
@@ -36,9 +37,9 @@
 #include <time.h>
 
 /* ANSI color codes */
+#define ANSI_COLOR_RED       "\x1B[1;31m"
 #define ANSI_COLOR_BLUE      "\x1B[1;34m"
 #define ANSI_COLOR_YELLOW    "\x1B[33m"
-#define ANSI_COLOR_RED       "\x1B[1;31m"
 #define ANSI_COLOR_GREEN     "\x1B[1;32m"
 #define ANSI_COLOR_RESET     "\x1B[0m"
 
