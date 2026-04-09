@@ -141,7 +141,7 @@ depth = 1
 
 ## Benchmarks
 
-I used a single-header testing framework `t_framework.h` to run unit tests and benchmarks in the same test file. The benchmarks were run on the following configuration:
+I wrote `t_framework.h`, a tiny single-header unit testing framework for running tests and benchmarks in the same file, built for workflows that existing frameworks didn’t support well. The benchmarks were run on the following configuration:
 
 - Machine: Apple M1 Pro 2020  
 - OS: macOS Sequoia 15.4.1 
@@ -167,9 +167,11 @@ In all cases, the hash tables were created for an initial number of 8,000,000 en
 
 ## License
 
-The robin-table source code is available under the MIT License.
+The `robin-table` source code is available under the MIT License.
+
 
 ## Reference
 
-- Celis, Pedro. _Robin Hood Hashing_. Tech. Rep. CS-86-14, Department of Computer Science, University of Waterloo, 1986. [https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf](https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf).
+- Celis, Pedro, Per-Åke Larson, and J. Ian Munro. "Robin Hood Hashing." 26th Annual Symposium on Foundations of Computer Science (SFCS), IEEE, 1985, pp. 281–288. https://doi.org/10.1109/SFCS.1985.48.
 
+- Celis, Pedro. Robin Hood Hashing. Department of Computer Science, University of Waterloo, 1986. https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf.
