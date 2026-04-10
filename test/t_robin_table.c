@@ -25,8 +25,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+#include "rtest.h"
 #include "robin_table.h"
-#include "t_framework.h"
 
 #define TEST_NUM_ENTRIES    1000000UL  /* 1M */
 #define TEST_STR_LEN        32U

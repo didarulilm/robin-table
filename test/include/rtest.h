@@ -23,12 +23,11 @@
  */
 
 /*
- * A dead-simple single-header unit testing framework for running unit tests 
- * and benchmarks in one file.
+ * A dead-simple single-header C unit testing framework with support for benchmarks.
  */
 
-#ifndef T_FRAMEWORK_H
-#define T_FRAMEWORK_H
+#ifndef RTEST_H
+#define RTEST_H
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -162,4 +161,4 @@ static inline uint64_t TEST_CLOCK_MONO(void)
         return test.case_failed;                                                         \
     }
 
-#endif /* T_FRAMEWORK_H */
+#endif /* RTEST_H */

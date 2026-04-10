@@ -141,7 +141,7 @@ depth = 1
 
 ## Benchmarks
 
-I wrote `t_framework.h`, a tiny single-header unit testing framework for running tests and benchmarks in the same file, built for workflows that existing frameworks didn’t support well. The benchmarks were run on the following configuration:
+The benchmarks were run with 🧪`rtest.h` on the following configuration:
 
 - Machine: Apple M1 Pro 2020  
 - OS: macOS Sequoia 15.4.1 
