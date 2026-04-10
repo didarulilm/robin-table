@@ -141,7 +141,7 @@ depth = 1
 
 ## Benchmarks
 
-The benchmarks were run with 🧪`rtest.h` on the following configuration:
+The benchmarks were run with 🧪 [rtest.h](https://github.com/didarulilm/robin-table/blob/main/test/include/rtest.h) on the following configuration:
 
 - Machine: Apple M1 Pro 2020  
 - OS: macOS Sequoia 15.4.1 
