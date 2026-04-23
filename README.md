@@ -167,7 +167,7 @@ In all cases, the hash tables were created for an initial number of 8,000,000 en
 
 ## License
 
-The `robin-table` source code is available under the MIT License.
+MIT - see the [LICENSE](./LICENSE).
 
 
 ## Reference
