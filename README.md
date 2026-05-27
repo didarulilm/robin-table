@@ -1,5 +1,14 @@
-# # robin-table 
-[![CI](https://github.com/didarulilm/robin-table/actions/workflows/ci.yml/badge.svg)](https://github.com/didarulilm/robin-table/actions/workflows/ci.yml)
+# robin-table
+
+<p align="center">
+<img width="200" height="220 alt="Image" src="https://github.com/user-attachments/assets/a41e7959-af31-448a-8618-4ebb6e784c30" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/didarulilm/robin-table/actions/workflows/ci.yml">
+    <img src="https://github.com/didarulilm/robin-table/actions/workflows/ci.yml/badge.svg" alt="CI">
+  </a>
+</p>
 
 A fast hash table/hash map implementation in C using open addressing with linear probing and Robin Hood hashing for collision resolution.
 
@@ -167,11 +176,9 @@ In all cases, the hash tables were created for an initial number of 8,000,000 en
 
 ## License
 
-MIT - see the [LICENSE](./LICENSE).
+MIT 
 
 
 ## Reference
-
-- Celis, Pedro, Per-Ake Larson, and J. Ian Munro. "Robin Hood Hashing." 26th Annual Symposium on Foundations of Computer Science (SFCS), IEEE, 1985, pp. 281–288. https://doi.org/10.1109/SFCS.1985.48.
 
 - Celis, Pedro. Robin Hood Hashing. Department of Computer Science, University of Waterloo, 1986. https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf.
