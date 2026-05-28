@@ -5,9 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/didarulilm/robin-table/actions/workflows/ci.yml">
-    <img src="https://github.com/didarulilm/robin-table/actions/workflows/ci.yml/badge.svg" alt="CI">
-  </a>
+  <a href="https://github.com/didarulilm/robin-table/actions/workflows/ci.yml"><img src="https://github.com/didarulilm/robin-table/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/didarulilm/robin-table/blob/main/LICENSE"><img src="https://img.shields.io/github/license/didarulilm/robin-table" alt="License"></a>
 </p>
 
 A fast hash table/hash map implementation in C using open addressing with linear probing and Robin Hood hashing for collision resolution.
